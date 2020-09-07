@@ -49,12 +49,6 @@ overrides:
     env:
       browser: true
     rules:
-      no-var: 'off'
-      prefer-arrow-callback: 'off'
-      no-magic-numbers: 'off'
-      vars-on-top: 'off'
-      prefer-template: 'off'
       no-invalid-this: 'off'
-      max-depth: ['error', 3]
     globals:
       io: true

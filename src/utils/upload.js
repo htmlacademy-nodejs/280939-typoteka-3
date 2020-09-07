@@ -41,7 +41,7 @@ const saveFile = async (req, pathPrefix, fieldNames, deletePrevFileCb) => {
     }
     await fsFromises.rename(
       file.path,
-      `${PATH_TO_PUBLIC}${backendFilePath}`,
+      PATH_TO_PUBLIC + backendFilePath,
     );
     delete req.body.file;
     fieldNames.forEach((fieldName) => {
